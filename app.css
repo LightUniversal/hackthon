@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter";
 }
 
 body {
@@ -149,12 +150,21 @@ nav .bell {
 
 .container-body .select-plan {
   width: 800px;
+  height: 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 8px 12px 16px;
   background-color: #1a1a1a;
   border-radius: 8px;
+  color: #e3e3e3;
+}
+.container-body .select-plan p {
+  /* width: 369px; */
+  height: 18px;
+  font-size: 13px;
+  line-height: 18.2px;
+  font-weight: 600;
   color: #e3e3e3;
 }
 
@@ -168,7 +178,11 @@ nav .bell {
   padding: 6px 12px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
+  /* width: 75px; */
   background: white;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.6px;
 }
 
 .right .cancel {
@@ -180,6 +194,11 @@ nav .bell {
 .setup-guide {
   width: 800px;
   height: 431px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  padding: 8px;
+  border: 1px;
+  box-shadow: 0px 1px 0px 0px #0000000d;
 }
 
 .setup-guide .guide {
@@ -190,11 +209,11 @@ nav .bell {
   padding: 8px;
   margin: auto;
   gap: 16px;
-  border: thin solid red;
+  /* border: thin solid red; */
 }
 
 .left {
-  border: thin solid red;
+  /* border: thin solid red; */
   width: 376px;
   display: grid;
   height: 42px;
@@ -239,7 +258,7 @@ nav .bell {
   width: 72px;
   height: 4px;
   position: relative;
-  background-color: #E3E3E3;
+  background-color: #e3e3e3;
   border-radius: 28px;
 }
 .left .below .progress-bar span {
@@ -278,139 +297,263 @@ nav .bell {
   height: 28px;
   border-radius: 6px;
   padding: 4px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #1a1a1a;
 }
 
-.customize .first, .customize .second {
-    width: 748px;
-    height: 141px;
-    border-radius: 10px;
-    padding: 8px 8px 12px 8px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: space-between;
-    background-color: #F3F3F3;
+.customize .first,
+.customize .second,
+.customize .three,
+.customize .four,
+.customize .five {
+  width: 748px;
+  height: 141px;
+  border-radius: 10px;
+  padding: 8px 8px 12px 8px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  background-color: #f3f3f3;
 }
 
-.customize .first .details, .second .details {
-    width: 515.86px;
-    height: 121px;
-    display: flex;
-    gap: 8px;
+.customize .first .details,
+.customize .second .details,
+.customize .three .details,
+.customize .four .details,
+.customize .five .details {
+  width: 515.86px;
+  height: 121px;
+  display: flex;
+  gap: 8px;
 }
 
-.customize .first .details .circularbar, .customize .second .details .circularbar  {
-    width: 24px;
-    height: 121px;
-    
+.customize .first .details .circularbar,
+.customize .second .details .circularbar,
+.customize .three .details .circularbar,
+.customize .four .details .circularbar,
+.customize .five .details .circularbar {
+  width: 24px;
+  height: 121px;
 }
 .moredetails {
-    display: grid;
-    gap: 16px;
+  display: grid;
+  gap: 16px;
 }
-.customize .first .details .circularbar .progress-bar, .customize .second .details .circularbar .progress-bar {
-    border: 2px dashed #8A8A8A;
-    border-radius: 100px;
-    width: 20px;
-    height: 20px;
+.customize .first .details .circularbar .progress-bar,
+.customize .second .details .circularbar .progress-bar,
+.customize .three .details .circularbar .progress-bar,
+.customize .four .details .circularbar .progress-bar,
+.customize .five .details .circularbar .progress-bar {
+  border: 2px dashed #8a8a8a;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
 }
 
-.customize .first .details .moredetails .online, .customize .second .details .moredetails .online {
-    width: 176px;
-    height: 18px;
-    color: #303030;
-    font-weight: 600;
-    font-family: "Inter";
-    font-size: 13px;
-    line-height: 18.2px;
-    gap: 8px;
+.customize .first .details .moredetails .online,
+.customize .second .details .moredetails .online,
+.customize .three .details .moredetails .online,
+.customize .four .details .moredetails .online,
+.customize .five .details .moredetails .online {
+  width: 176px;
+  height: 18px;
+  color: #303030;
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 13px;
+  line-height: 18.2px;
+  gap: 8px;
 }
-.customize .first .details .moredetails .online+p, .customize .second .details .moredetails .online+p {
-    width: 483.86px;
-    height: 39px;
-    font-weight: 500;
-    font-family: "Inter";
-    font-size: 13px;
-    line-height: 19.6px;
-    color: #616161;
+.customize .first .details .moredetails .online + p,
+.customize .second .details .moredetails .online + p,
+.customize .three .details .moredetails .online + p,
+.customize .four .details .moredetails .online + p,
+.customize .five .details .moredetails .online + p {
+  width: 483.86px;
+  height: 39px;
+  font-weight: 500;
+  font-family: "Inter";
+  font-size: 13px;
+  line-height: 19.6px;
+  color: #616161;
 }
-.customize .first .details .moredetails .online+p a, .customize .second .details .moredetails .online+p a {
-    color: #005BD3;
-    text-decoration: none;
+.customize .five .details .moredetails .online + p {
+    height: 57px;
+}
+.customize .first .details .moredetails .online + p a,
+.customize .second .details .moredetails .online + p a,
+.customize .three .details .moredetails .online + p a,
+.customize .four .details .moredetails .online + p a,
+.customize .five .details .moredetails .online + p a {
+  color: #005bd3;
+  text-decoration: none;
 }
 
 .first .moredetails .customizebtn {
-    width: 127px;
-    height: 28px;
-    background-color: #404040;
-    padding: 6px 12px 6px 12px;
-    border-radius: 6px;
-    display: flex;
-    border-width: 1.5px 1.5px 0px 1.5px;
-    /* color: #F6F3F6; */
-
+  width: 127px;
+  height: 28px;
+  background-color: #404040;
+  padding: 6px 12px 6px 12px;
+  border-radius: 6px;
+  display: flex;
+  border-width: 1.5px 1.5px 0px 1.5px;
+  border-style: solid;
+  border-color: #ffffff33;
+  box-shadow: 0px 0px 0px 1.5px #333333;
+  /* color: #F6F3F6; */
 }
 
 .first .moredetails .customizebtn button {
-    /* width: 103px; */
-    height: 16px;
-    font-family: "Inter";
-    font-weight: 600;
-    border: none;
-    outline: none;
-    background-color: inherit;
-    color: #F6F3F6;
-    font-size: 12px;
-    line-height: 15.6px;
+  /* width: 103px; */
+  height: 16px;
+  font-family: "Inter";
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: #f6f3f6;
+  font-size: 12px;
+  line-height: 15.6px;
 }
 
-.second .moredetails  .customizebtn {
-    display: flex;
-    justify-content: space-between;
-    width: 225px;
-    align-items: center;
-    /* background-color: red; */
-    height: 28px;
-    gap: 16px;
+.second .moredetails .customizebtn {
+  display: flex;
+  justify-content: space-between;
+  width: 225px;
+  align-items: center;
+  /* background-color: red; */
+  height: 28px;
+  gap: 16px;
+  
 }
-.second .moredetails  .customizebtn button.add {
-    width: 97px;
-    height: 28px;
-    border-radius: 6px;
-    background-color: #404040;
-    color: #F6F3F6;
-    /* padding: 6px 12px 6px 12px; */
-    border: 1.5px 1.5px 0px 1.5px;
-    font-family: "Inter";
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15.6px;
+.second .moredetails .customizebtn button.add {
+  width: 97px;
+  height: 28px;
+  border-radius: 6px;
+  background-color: #404040;
+  color: #f6f3f6;
+  /* padding: 6px 12px 6px 12px; */
+  border: 1.5px 1.5px 0px 1.5px;
+  border-width: 1.5px 1.5px 0px 1.5px;
+  border-style: solid;
+  border-color: #ffffff33;
+  box-shadow: 0px 0px 0px 1.5px #333333;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15.6px;
+}
+.second .moredetails .customizebtn button.add + button {
+  width: 88px;
+  height: 16px;
+  border-radius: 6px;
+  font-family: "Inter";
+  line-height: 15.6px;
+  font-weight: 600;
+  font-size: 12px;
+  background-color: transparent;
+  color: #323232;
+  /* padding: 6px 12px 6px 12px; */
+  border: none;
+}
 
+.three .moredetails .customizebtn {
+  width: 127px;
+  height: 28px;
+  background-color: #404040;
+  padding: 6px 12px 6px 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  border-width: 1.5px 1.5px 0px 1.5px;
+  border-style: solid;
+  border-color: #ffffff33;
+  box-shadow: 0px 0px 0px 1.5px #333333;
+
+  /* color: #F6F3F6; */
 }
-.second .moredetails  .customizebtn button.add+ button {
-    width: 88px;
-    height: 16px;
-    border-radius: 6px;
-    font-family: "Inter";
-    line-height: 15.6px;
-    font-weight: 600;
-    font-size: 12px;
-    background-color: transparent;
-    color: #323232;
-    /* padding: 6px 12px 6px 12px; */
-    border: none
+
+.three .moredetails .customizebtn button {
+  /* width: 103px; */
+  height: 16px;
+  font-family: "Inter";
+  font-weight: 600;
+  border: none;
+  outline: none;
+
+  background-color: inherit;
+  color: #f6f3f6;
+  font-size: 12px;
+  line-height: 15.6px;
+}
+.four .moredetails .customizebtn {
+  width: 127px;
+  height: 28px;
+  background-color: #404040;
+  padding: 6px 12px 6px 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  border-width: 1.5px 1.5px 0px 1.5px;
+  border-style: solid;
+  border-color: #ffffff33;
+  box-shadow: 0px 0px 0px 1.5px #333333;
+
+  /* color: #F6F3F6; */
+}
+
+.four .moredetails .customizebtn button {
+  /* width: 103px; */
+  height: 16px;
+  font-family: "Inter";
+  font-weight: 600;
+  border: none;
+  outline: none;
+
+  background-color: inherit;
+  color: #f6f3f6;
+  font-size: 12px;
+  line-height: 15.6px;
+}
+.five .moredetails .customizebtn {
+  width: 127px;
+  height: 28px;
+  background-color: #404040;
+  padding: 6px 12px 6px 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  border-width: 1.5px 1.5px 0px 1.5px;
+  border-style: solid;
+  border-color: #ffffff33;
+  box-shadow: 0px 0px 0px 1.5px #333333;
+
+  /* color: #F6F3F6; */
+}
+
+.five .moredetails .customizebtn button {
+  /* width: 103px; */
+  height: 16px;
+  font-family: "Inter";
+  font-weight: 600;
+  border: none;
+  outline: none;
+
+  background-color: inherit;
+  color: #f6f3f6;
+  font-size: 12px;
+  line-height: 15.6px;
 }
 div.image {
-    width: 156.14px;
-    height: 120px;
+  width: 156.14px;
+  height: 120px;
 }
 div.image img {
-    width: 156.14px;
-    height: 120px;
+  width: 156.14px;
+  height: 120px;
 }
