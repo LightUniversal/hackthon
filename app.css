@@ -7,6 +7,7 @@
 
 body {
   background-color: #f1f1f1;
+  /* width: 100%; */
 }
 .mobile {
   display: none;
@@ -14,6 +15,8 @@ body {
 
 nav {
   background-color: #1a1a1a;
+  position: relative;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,6 +71,223 @@ nav .user-info {
   align-items: center;
   gap: 8px;
   color: #e3e3e3;
+}
+
+nav .dropdown {
+  position: absolute;
+  left: 1104px;
+  display: grid;
+  gap: 4px;
+  left: 1104px;
+  background-color: #ffffff;
+  top: 64px;
+  border: 1px solid;
+  border-radius: 14px;
+  padding: 6px 0px 6px 0px;
+  width: 320px;
+  height: 384px;
+}
+nav .dropdowntop {
+  width: 320px;
+  height: 72px;
+  display: grid;
+  gap: 8px;
+  /* background-color: #F1F1F1; */
+  padding: 0px 6px;
+}
+nav .dropdowntop .usertoggle button span.initial {
+  background-color: #36fba1;
+  border-radius: 5.25px;
+  height: 28px;
+  line-height: 10.5px;
+  font-size: 10.5px;
+  text-align: center;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .dropdowntop .home {
+  width: 308px;
+  padding: 8px;
+  border-radius: 8px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .dropdowntop .home span {
+  width: 308px;
+  color: #303030;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18.2px;
+  margin-left: 5px;
+}
+nav .dropdowntop .home svg {
+  width: 20px;
+  vertical-align: middle;
+  height: 20px;
+  fill: #303030 !important;
+}
+nav .dropdowntop .usertoggle button {
+  width: 141px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+nav .dropdowntop .usertoggle button .initial + span {
+  width: 105px;
+  height: 18px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18.2px;
+  color: #303030;
+}
+nav .dropdowntop .usertoggle .svg {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+nav .dropdowntop .usertoggle .svg svg {
+  fill: #303030 !important;
+  cursor: pointer;
+}
+nav .dropdowntop .usertoggle {
+  display: flex;
+  width: 308px;
+  justify-content: space-between;
+  height: 36px;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 4px 12px 4px 8px;
+  border-radius: 8px;
+}
+nav .dropdown-content {
+  display: grid;
+  gap: 8px;
+  width: 320px;
+  border-top: 0.75px solid #e1e1e1;
+  border-bottom: 0.75px solid #e1e1e1;
+  height: 196px;
+  padding: 0px 6px;
+  align-items: center;
+}
+nav .dropdown-content a {
+  height: 30px;
+  width: 308px;
+  line-height: 18.2px;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #303030 !important;
+  border-radius: 8px;
+  padding: 8px;
+}
+nav .navuserdetails .userdets {
+  padding: 8px;
+}
+nav .navuserdetails .userdets h4 {
+  font-size: 13px;
+  line-height: 18.2px;
+  color: #303030;
+}
+
+/* Alert */
+nav .alert {
+  width: 383px;
+  height: 118px;
+  position: absolute;
+  left: 1041px;
+  top: 64px;
+  border-radius: 14px;
+  border: 1px solid #dbdbdb;
+  display: grid;
+  box-shadow: 0px 4px 8px 0px #0000000d;
+  background-color: #ffffff;
+  padding: 16px;
+  gap: 16px;
+}
+
+nav .alert .alertarea h5 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+  color: #303030;
+}
+nav .alert .alertarea svg {
+  width: 20px;
+  height: 20px;
+  fill: #616161 !important;
+}
+ nav .alert .alertarea {
+  width: 351px;
+  align-items: center;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+ } 
+nav .alert .alertarea+div {
+  background-color: #F1F1F1;
+  width: 351px;
+  height: 50px;
+  padding: 16px;
+}
+nav .alert .alertarea+div p {
+ font-size: 13px;
+ font-weight: 600;
+ font-family: "Inter";
+ line-height: 18.2px;
+}
+nav .navuserdetails .userdets a {
+  font-size: 13px;
+  text-decoration: none;
+  line-height: 15.6px;
+  font-weight: 400;
+  color: #616161 !important;
+}
+nav .navuserdetails {
+  width: 320px;
+  height: 118px;
+  display: grid;
+  gap: 8px;
+  padding: 0px 6px;
+}
+nav .navuserdetails .manaccount {
+  width: 308px;
+  padding: 6px;
+  height: 30px;
+}
+nav .navuserdetails .manaccount button {
+  /* height: 18px; */
+  /* width: 103px; */
+  font-weight: 400;
+  line-height: 18.2px;
+  font-size: 13px;
+  /* display: grid; */
+  background-color: transparent !important;
+  border: none !important;
+}
+nav .navuserdetails .logout {
+  width: 308px;
+  padding: 6px;
+  /* height: 30px; */
+}
+nav .navuserdetails .logout button {
+  height: 18px;
+  width: 47px;
+  font-size: 13px;
+  line-height: 18.2px;
+
+  font-weight: 400;
+  text-align: left;
+  /* display: grid; */
+  background-color: transparent !important;
+  border: none !important;
 }
 
 .user-info .bell-container {
@@ -287,9 +507,6 @@ nav .bell {
 
 .toggle {
 }
-.toggle svg {
-  fill: #4a4a4a;
-}
 
 .toggle .toggleup,
 .toggle .toggledown {
@@ -301,9 +518,16 @@ nav .bell {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1a1a1a;
 }
-
+.toggledown {
+  display: none !important;
+}
+.customize {
+  width: 784px;
+  height: 309px;
+  display: grid;
+  gap: 2px;
+}
 .customize .first,
 .customize .second,
 .customize .three,
@@ -383,7 +607,7 @@ nav .bell {
   color: #616161;
 }
 .customize .five .details .moredetails .online + p {
-    height: 57px;
+  height: 57px;
 }
 .customize .first .details .moredetails .online + p a,
 .customize .second .details .moredetails .online + p a,
@@ -395,7 +619,7 @@ nav .bell {
 }
 
 .first .moredetails .customizebtn {
-  width: 127px;
+  width: 130px;
   height: 28px;
   background-color: #404040;
   padding: 6px 12px 6px 12px;
@@ -429,7 +653,6 @@ nav .bell {
   /* background-color: red; */
   height: 28px;
   gap: 16px;
-  
 }
 .second .moredetails .customizebtn button.add {
   width: 97px;
@@ -556,4 +779,26 @@ div.image {
 div.image img {
   width: 156.14px;
   height: 120px;
+}
+.details {
+  /* background-color: #fff; */
+}
+.close {
+  background-color: white !important;
+  /* border: thin solid ; */
+  display: block !important;
+  height: 40px !important;
+}
+.closedropdown {
+  display: none !important;
+}
+.active {
+  display: block;
+  transition: all 0.3s;
+}
+/* .second,.three, .four, .five {
+  display: none !important;
+} */
+.off {
+  display: none !important;
 }
