@@ -75,10 +75,9 @@ nav .user-info {
 
 nav .dropdown {
   position: absolute;
-  left: 1104px;
-  display: grid;
+  left: 1098px !important;
+  /* display: grid; */
   gap: 4px;
-  left: 1104px;
   background-color: #ffffff;
   top: 64px;
   border: 1px solid;
@@ -202,7 +201,7 @@ nav .alert {
   width: 383px;
   height: 118px;
   position: absolute;
-  left: 1041px;
+  left: 1035px;
   top: 64px;
   border-radius: 14px;
   border: 1px solid #dbdbdb;
